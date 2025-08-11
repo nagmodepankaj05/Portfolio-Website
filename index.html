@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pankaj Nagmode </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Gabarito&family=Lobster&family=Tagesschrift&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nevbar">
+            <div class="logo"><i><a href="#">Np</a></i></div>
+            <div class="nev-content">
+                <ul>
+                    <li onclick="ScrollHome()">Home</li>
+                    <li onclick="ScrollAbout()">About </li>
+                    <li onclick="ScrollSkills()">Skills</li>
+                    <li onclick="ScrollProjects()">Projects</li>
+                    <li onclick="ScrollContact()">Contact</li>
+                </ul>
+            </div>
+            <div class="hide-menu-button">
+                <button onclick="toggleHideMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="hide-nevbar-content" id="hideMenu">
+                    <ul>
+                        <li onclick="ScrollHome()">Home</li>
+                        <li onclick="ScrollAbout()">About </li>
+                        <li onclick="ScrollSkills()">Skills</li>
+                        <li onclick="ScrollProjects()">Projects</li>
+                        <li onclick="ScrollContact()">Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="main-intro">
+                <div class="main-intro-info">
+                    <h4 class="hello">HELLO!</h4>
+                    <h1 class="firstName"><span class="im">I'M</span> PANKAJ</h1>
+                    <h1 class="lastName">NAGMODE</h1>
+                    <p class="web-dev">A Web Developer</p>
+                    <button class="contact-me" onclick="scrollContactForm()">
+                        Contact Me
+                    </button>
+                </div>
+                <div class="main-intro-img">
+                    <img src="animated_bg4.png">
+                </div>
+            </div>
+            <div class="goTop">
+                <button onclick="ScrollHome()">
+                    <i class="fa-solid fa-jet-fighter-up"></i>
+                    <div class="topText">TOP</div>
+                </button>
+            </div>
+        </section>
+        <section>
+            <div class="about">
+                <h1 class="about-text">About Me</h1>
+                <p class="text">
+                    I’m an aspiring web developer with a strong passion for building user-
+                    friendly and responsive websites. I have hands-on experience in HTML,
+
+                    CSS, JavaScript, Python and frameworks like React. I’ve also worked on
+                    personal and academic projects that involve front-end development,
+                    responsive design. I’m eager to learn from real-world industry
+                    experience and contribute meaningfully to a development team.
+                </p>
+                <div class="personal-details">
+                    <h1 class="fullname"><b><span class="name">Name :</span></b> Pankaj Nagmode</h1>
+                    <h1 class="fullname"><b><span class="name">Email :</span></b> nagmodepankaj2032@gmail.com</h1>
+                    <h1 class="fullname"><b><span class="name">Phone :</span></b> 9175570036</h1>
+                    <h1 class="fullname"><b><span class="name">Address :</span></b> lokmanya Nagar, Pune</h1>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="skills">
+                <div class="title">My Skills</div>
+                <h2 class="skill-title">Technical Skills : </h2>
+                <div class="skills-container">
+                    <div class="skills-box">
+                        <div class="skills-box-content">
+                            <div class="box-content-text">
+                                <div class="content-text1">
+                                    HTML
+                                </div>
+                                <div class="content-text2">
+                                    95%
+                                </div>
+                            </div>
+                            <div class="box-content-level">
+                                <div class="level-fill1"></div>
+                            </div>
+                        </div>
+                        <div class="skills-box-content">
+                            <div class="box-content-text">
+                                <div class="box-content-text">
+                                    <div class="content-text1">
+                                        CSS
+                                    </div>
+                                    <div class="content-text2">
+                                        90%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-content-level">
+                                <div class="level-fill2"></div>
+                            </div>
+                        </div>
+                        <div class="skills-box-content">
+                            <div class="box-content-text">
+                                <div class="box-content-text">
+                                    <div class="content-text1">
+                                        JavaScript
+                                    </div>
+                                    <div class="content-text2">
+                                        70%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-content-level">
+                                <div class="level-fill3"></div>
+                            </div>
+                        </div>
+                        <div class="skills-box-content">
+                            <div class="box-content-text">
+                                <div class="box-content-text">
+                                    <div class="content-text1">
+                                        C++
+                                    </div>
+                                    <div class="content-text2">
+                                        60%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-content-level">
+                                <div class="level-fill4"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-box-content">
+                            <div class="box-content-text">
+                                <div class="box-content-text">
+                                    <div class="content-text1">
+                                        Python
+                                    </div>
+                                    <div class="content-text2">
+                                        75%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-content-level">
+                                <div class="level-fill5"></div>
+                            </div>
+                        </div>
+                        <div class="skills-box-content">
+                            <div class="box-content-text">
+                                <div class="box-content-text">
+                                    <div class="content-text1">
+                                        SQL
+                                    </div>
+                                    <div class="content-text2">
+                                        80%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-content-level">
+                                <div class="level-fill6"></div>
+                            </div>
+                        </div>
+                        <div class="skills-box-content">
+                            <div class="box-content-text">
+                                <div class="box-content-text">
+                                    <div class="content-text1">
+                                        PHP
+                                    </div>
+                                    <div class="content-text2">
+                                        70%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-content-level">
+                                <div class="level-fill7"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="skill-title">Tools & Technologies : </h2>
+                <div class="skills-container">
+                    <div class="skills-box">
+                        <div class="skills-box-content">
+                            <div class="box-content-text">
+                                <div class="content-text1">
+                                    React.js
+                                </div>
+                                <div class="content-text2">
+                                    60%
+                                </div>
+                            </div>
+                            <div class="box-content-level">
+                                <div class="level-fill9"></div>
+                            </div>
+                        </div>
+                        <div class="skills-box-content">
+                            <div class="box-content-text">
+                                <div class="box-content-text">
+                                    <div class="content-text1">
+                                        BootStrap
+                                    </div>
+                                    <div class="content-text2">
+                                        75%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-content-level">
+                                <div class="level-fill10"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-box-content">
+                            <div class="box-content-text">
+                                <div class="box-content-text">
+                                    <div class="content-text1">
+                                        Wordpress
+                                    </div>
+                                    <div class="content-text2">
+                                        60%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-content-level">
+                                <div class="level-fill11"></div>
+                            </div>
+                        </div>
+                        <div class="skills-box-content">
+                            <div class="box-content-text">
+                                <div class="box-content-text">
+                                    <div class="content-text1">
+                                        Git/Github
+                                    </div>
+                                    <div class="content-text2">
+                                        75%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-content-level">
+                                <div class="level-fill12"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="projects">
+                <div class="title">My Projects</div>
+                <div class="projects-container">
+                    <div class="project-sec1">
+                        <div class="sec1-box1">
+                            <img src="portfolio_web.png">
+                            <div class="overlay">
+                                <div class="text"><a href="#">Portfolio website</a></div>
+                            </div>
+                        </div>
+                        <div class="sec1-box2">
+                            <img src="ndli_projects.png">
+                            <div class="overlay">
+                                <div class="text"><a href="#">NDLI Clone</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-sec2">
+                        <div class="sec2-box1">
+                            <img src="edusite.png">
+                            <div class="overlay">
+                                <div class="text"><a href="#">EduSite - Educational web</a></div>
+                            </div>
+                        </div>
+                        <div class="sec2-box2">
+                            <img src="simon_game.png">
+                            <div class="overlay">
+                                <div class="text"><a href="#">Simon Says Game</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contact-section">
+                <div class="title">Contact Me</div>
+                <div class="contact-logos">
+                    <div class="logo-sec">
+                        <div class="contact-logo">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                        <div class="logo-sec-text">
+                            <h1>Email Address</h1>
+                            <h3>nagmodepankaj2032@gmail.com</h3>
+                        </div>
+                    </div>
+                    <div class="logo-sec">
+                        <div class="contact-logo">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="logo-sec-text">
+                            <h1>Contact Number</h1>
+                            <h2>+91 9175570036</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="contact.php" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" placeholder="Message" rows="6" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="footer">
+                <div class="footer-links">
+                    <div class="logo-sec">
+                        <div class="contact-logo">
+                            <a href="https://github.com/nagmodepankaj05" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="logo-sec">
+                        <div class="contact-logo">
+                            <a href="#"><i class="fa-brands fa-linkedin" style="color: #0e60a0;"></i></a>
+                        </div>
+                    </div>
+                    <div class="logo-sec">
+                        <div class="contact-logo">
+                            <a href="#"><i class="fa-brands fa-facebook" style="color: #0e60a0;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-text">
+                    <h2>2025 © Nagmode Pankaj</h2>
+                </div>
+            </div>
+        </section>
+    </footer>
+     <script src="script.js"></script>
+</body>
+
+</html>
