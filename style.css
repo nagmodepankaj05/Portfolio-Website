@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #0f172a;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background-image:
+
+    linear-gradient(rgba(0, 255, 255, 0.08) 1px, transparent 1px),
+
+    linear-gradient(90deg, rgba(0, 255, 255, 0.08) 1px, transparent 1px),
+
+    radial-gradient(circle at 0 0,
+      white 1px,
+      rgba(255, 255, 255, 0.6) 3px,
+      transparent 8px);
+
+  background-size:
+    80px 80px,
+    80px 80px,
+    80px 80px;
+
+  background-repeat: repeat;
+  margin: 10px;
+}
+
+.navbar {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 1400px;
+
+  padding: 12px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+
+  border-radius: 20px;
+  z-index: 1000;
+}
+
+.navbar::before,
+.navbar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #00f5ff,
+    #8b5cf6,
+    #00f5ff,
+    transparent
+  );
+
+  box-shadow: 0 0 10px #00f5ff;
+}
+
+.navbar::before {
+  top: 0;
+}
+
+.navbar::after {
+  bottom: 0;
+}
+
+/*  LOGO  */
+
+.logo-circle {
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #00f5ff;
+  box-shadow: 0 0 15px #00f5ff;
+
+  transition: 0.4s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.logo-circle span {
+  font-weight: bold;
+  color: #00f5ff;
+  font-size: 18px;
+}
+
+.logo-circle:hover {
+  transform: scale(1.1) rotate(8deg);
+  box-shadow: 0 0 25px #00f5ff;
+}
+
+
+.button-section {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 15px;
+}
+
+
+.btn.primary {
+  background: linear-gradient(90deg, #00f5ff, #8b5cf6);
+  border: none;
+  color: white;
+}
+
+.btn.primary:hover {
+  box-shadow: 0 0 20px #00f5ff;
+  transform: translateY(-3px);
+}
+
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #00f5ff;
+  color: #00f5ff;
+}
+
+.btn.secondary:hover {
+  background: #00f5ff;
+  color: #0f172a;
+  box-shadow: 0 0 15px #00f5ff;
+}
+
+
+.hide-menu-button {
+  display: none;
+  position: relative;
+}
+
+.hide-menu-button button {
+  background: transparent;
+  border: none;
+  color: #00f5ff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/*  MOBILE MENU  */
+
+.hide-navbar-content {
+  position: absolute;
+  top: 60px;
+  right: 0;
+
+  width: 260px;
+
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+
+  border-radius: 16px;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+
+  overflow: hidden;
+
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.4s ease;
+}
+
+.hide-navbar-content.active {
+  max-height: 400px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.hide-navbar-content ul {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.hide-navbar-content li {
+  padding: 15px 20px;
+  color: #00f5ff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hide-navbar-content li:hover {
+  background: rgba(0, 245, 255, 0.1);
+  color: white;
+  padding-left: 28px;
+}
+
+
+/*  RESPONSIVE  */
+
+@media (max-width: 992px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .button-section {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .button-section {
+    display: none;
+  }
+
+  .hide-menu-button {
+    display: block;
+  }
+
+  .logo-circle {
+    width: 52px;
+    height: 52px;
+  }
+
+  .logo-circle span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .navbar {
+    width: 94%;
+    top: 8px;
+    padding: 10px 16px;
+  }
+
+  .hide-navbar-content {
+    width: 220px;
+  }
+
+  .hide-menu-button button {
+    font-size: 24px;
+  }
+}

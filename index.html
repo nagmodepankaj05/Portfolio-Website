@@ -17,6 +17,35 @@
 </head>
 
 <body>
-    
+    <nav>
+        <div class="navbar">
+            <div class="logo-circle">
+                <span>&lt;NP/&gt;</span>
+            </div>
+            <div class="button-section">
+                <button class="btn secondary" onclick="ScrollHome()">Home</button>
+                <button class="btn secondary" onclick="ScrollAbout()">About</button>
+                <button class="btn secondary" onclick="ScrollSkills()">Skills</button>
+                <button class="btn secondary" onclick="ScrollProjects()">Projects</button>
+                <button class="btn primary" onclick="ScrollContact()">Contact Me</button>
+            </div>
+            <div class="hide-menu-button">
+                <button onclick="toggleHideMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
 
+                <div class="hide-navbar-content" id="hideMenu">
+                    <ul>
+                        <li onclick="ScrollHome()">Home</li>
+                        <li onclick="ScrollAbout()">About</li>
+                        <li onclick="ScrollSkills()">Skills</li>
+                        <li onclick="ScrollProjects()">Projects</li>
+                        <li onclick="ScrollContact()">Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <script src="script.js"></script>
 </body>
