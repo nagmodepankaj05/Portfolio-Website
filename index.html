@@ -14,8 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Gabarito&family=Lobster&family=Tagesschrift&family=Tangerine:wght@400;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -49,7 +48,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         </div>
     </nav>
     <main>
-        <section class="intro-section">
+        <section class="intro-section" id="home">
             <div class="divider">
                 <div class="intro-text">
                     <h1 style="color: white; ">HELLO!</h1>
@@ -68,7 +67,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                         <span class="subHeding">Problem Solver</span>
                     </h2>
                     <div class="contactBtn">
-                        <button class="cbtn contact">Contact Me</button>
+                        <button class="cbtn contact" onclick="ScrollContact()">Contact Me</button>
                     </div>
                 </div>
                 <div class="intro-img">
@@ -76,7 +75,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                 </div>
             </div>
         </section>
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="section-title">
                 <span>About Me</span>
             </div>
@@ -87,7 +86,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                             <img src="pankaj-profile.png" alt="Pankaj Profile">
                         </div>
                         <div class="contactBtn">
-                            <button class="cbtn contact">Contact Me</button>
+                            <button class="cbtn contact" onclick="ScrollContact()" >Contact Me</button>
                         </div>
                     </div>
                     <div class="about-text-section">
@@ -124,7 +123,271 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                 </div>
             </div>
         </section>
+        <section class="skills-section" id="skills">
+
+            <div class="section-title">
+                <span>My Skills</span>
+            </div>
+
+            <div class="skills-wrapper">
+
+                <h2 class="skills-heading">Technical Skills</h2>
+
+                <div class="skills-container">
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h4>HTML</h4>
+                        <p>95%</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <h4>CSS</h4>
+                        <p>90%</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <h4>JavaScript</h4>
+                        <p>85%</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h4>SQL(MySQL)</h4>
+                        <p>85%</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <h4>React</h4>
+                        <p>75%</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <h4>Python</h4>
+                        <p>75%</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-brands fa-php"></i>
+                        </div>
+                        <h4>Php</h4>
+                        <p>60%</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="skills-wrapper tools-section">
+
+                <h2 class="skills-heading">Tools</h2>
+
+                <div class="skills-container">
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <h4>Git/GitHub</h4>
+                        <p>80%</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h4>VS Code</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h4>MySQL Workbench</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-solid fa-table"></i>
+                        </div>
+                        <h4>Excel</h4>
+                        <p>70%</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-solid fa-square-poll-vertical"></i>
+                        </div>
+                        <h4>Power BI</h4>
+                        <p>50%</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="projects-section" id="projects">
+            <div class="section-title">
+                <span>Tech I Work With</span>
+            </div>
+
+            <div class="projects-container">
+
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <img src="portfolio_web.png" alt="Project 1">
+
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#" target="_blank" class="project-btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <img src="Quiz_Web.png" alt="Project 3">
+
+                    <div class="project-content">
+                        <h3>Quiz Website</h3>
+
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>MySQL</span>
+                            <span>PHP</span>
+                        </div>
+
+                        <a href="https://github.com/nagmodepankaj05/Quiz-Website" target="_blank"
+                            class="project-btn">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <img src="E-commerceWebsite.png" alt="Project 2">
+
+                    <div class="project-content">
+                        <h3>E-Commerce Website</h3>
+
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>MySQL</span>
+                            <span>PHP</span>
+                        </div>
+
+                        <a href="#" class="project-btn">Working Project</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="contact-section" id="contact">
+
+            <div class="section-title">
+                <span>Contact Me</span>
+            </div>
+
+            <div class="contact-container">
+
+                <div class="contact-info">
+
+                    <h2>Let's Work Together</h2>
+
+                    <p>
+                        I am open to internships, freelance projects,
+                        collaborations, and web development opportunities.
+                        Feel free to contact me anytime.
+                    </p>
+
+                    <div class="contact-details">
+
+
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <a href="mailto:nagmodepankaj2032@gmail.com">
+                                nagmodepankaj2032@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-brands fa-github"></i>
+
+                            <a href="https://github.com/nagmodepankaj05" target="_blank" rel="noopener">
+                                GitHub Profile
+                            </a>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-brands fa-linkedin"></i>
+
+                            <a href="https://linkedin.com/" target="_blank" rel="noopener">
+                                LinkedIn Profile
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/mlgvjkok" method="POST" class="contact-form">
+
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <input type="text" name="name" placeholder="Your Name" required>
+
+                    <input type="email" name="email" placeholder="Your Email" required>
+
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+                    <button type="submit" class="send-btn">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
     </main>
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <p class="footer-text">
+                © 2026 Pankaj Nagmode. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

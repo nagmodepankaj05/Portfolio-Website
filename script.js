@@ -10,3 +10,33 @@ menuItems.forEach(item => {
         document.getElementById("hideMenu").classList.remove("active");
     });
 });
+
+function ScrollHome() {
+    document.getElementById("home").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+function ScrollAbout() {
+    document.getElementById("about").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+function ScrollSkills() {
+    document.getElementById("skills").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+function ScrollProjects() {
+    document.getElementById("projects").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+function ScrollContact() {
+    document.getElementById("contact").scrollIntoView({
+        behavior: "smooth"
+    });
+}
