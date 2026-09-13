@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagmode Pankaj - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Gabarito&family=Lobster&family=Tagesschrift&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo-circle">
+                <span>&lt;NP/&gt;</span>
+            </div>
+            <div class="button-section">
+                <button class="btn secondary" onclick="ScrollHome()">Home</button>
+                <button class="btn secondary" onclick="ScrollAbout()">About</button>
+                <button class="btn secondary" onclick="ScrollSkills()">Skills</button>
+                <button class="btn secondary" onclick="ScrollProjects()">Projects</button>
+                <button class="btn primary" onclick="ScrollContact()">Contact Me</button>
+            </div>
+            <div class="hide-menu-button">
+                <button onclick="toggleHideMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="hide-navbar-content" id="hideMenu">
+                    <ul>
+                        <li onclick="ScrollHome()">Home</li>
+                        <li onclick="ScrollAbout()">About</li>
+                        <li onclick="ScrollSkills()">Skills</li>
+                        <li onclick="ScrollProjects()">Projects</li>
+                        <li onclick="ScrollContact()">Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="intro-section" id="home">
+            <div class="divider">
+                <div class="intro-text">
+                    <h1 style="color: white; ">HELLO!</h1>
+                    <h1>I'M Pankaj Nagmode</h1>
+
+                    <h2 class="role">
+                        <i class="fa-solid fa-angle-right" style="color: rgb(180, 157, 157); "></i>
+
+                        <span class="typing-container">
+                            <span id="typing-text"></span>
+                            <span class="cursor">|</span>
+                        </span>
+                    </h2>
+                    <p class="hero-intro">
+                        Software Developer specializing in responsive web applications, database management, and problem
+                        solving. I enjoy building fast, scalable, and user-friendly digital experiences.
+                    </p>
+                    <div class="contactBtn">
+                        <button class="cbtn contact" onclick="ScrollContact()">Contact Me</button>
+                        <button class="cbtn contact resume">
+                            <a href="#" target="_blank" download="nagmodePankaj05.pdf"> Download Resume </a>
+                            <i class="fa-solid fa-arrow-up-right-from-square" style="color: rgb(229, 227, 234);"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="intro-img">
+                    <div class="image-wrapper">
+                        <img src="assets/animated_bg4.png" alt="Pankaj Nagmode">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats">
+
+                <div class="stat-card" onclick="window.open('https://github.com/nagmodepankaj05', '_blank')">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>5+</h2>
+                    <p>Projects</p>
+                </div>
+
+                <div class="stat-card" onclick="window.open('https://leetcode.com/u/nagmode_pankaj_05/', '_blank')">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>50+</h2>
+                    <p>DSA Solved</p>
+                </div>
+
+                <div class="stat-card"
+                    onclick="window.open('https://drive.google.com/drive/folders/1IEgu56veCQPDKRJ78zreoxWcKQMZxm7r?usp=drive_link', '_blank')">
+                    <i class="fa-solid fa-award"></i>
+                    <h2>6+</h2>
+                    <p>Certificates</p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h2>Fresher</h2>
+                    <p>Open to Work</p>
+                </div>
+            </div>
+        </section>
+        <section class="about-section" id="about">
+            <div class="section-title">
+                <span>About Me</span>
+            </div>
+            <div class="about-main-section">
+                <div class="about-section-divider">
+
+                    <!-- LEFT COLUMN -->
+                    <div class="about-left-column">
+
+                        <div class="profile-container">
+                            <img src="assets/pankaj-profile.png" alt="Pankaj Profile">
+                        </div>
+
+                        <h3 class="about-role">
+                            <i class="fa-solid fa-angle-right"></i>
+
+                            <span class="typing-container">
+                                <span id="about-typing-text"></span>
+                                <span class="cursor">|</span>
+                            </span>
+                        </h3>
+
+                        <div class="about-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Pune, Maharashtra, India</span>
+                        </div>
+
+                        <div class="contactBtn">
+                            <button class="cbtn contact" onclick="ScrollContact()">
+                                Contact Me
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT COLUMN -->
+
+                    <div class="about-right-column">
+
+                        <div class="about-title">
+
+                            <h2>PANKAJ <span>NAGMODE</span></h2>
+
+                            <h3>
+                                <i class="fa-solid fa-envelope"></i>
+                                nagmodepankaj2032@gmail.com
+                            </h3>
+
+                        </div>
+
+                        <p class="about-summary">
+
+                            Software Developer with a strong foundation in Python, SQL, HTML, CSS, JavaScript, PHP, and
+                            Core Java, along with hands-on experience in developing responsive web applications using
+                            Flask, React.js, Bootstrap, MySQL, and PostgreSQL. Proficient in database design, SQL
+                            queries, version control with Git and GitHub, and building user-friendly, scalable
+                            applications. Strong understanding of software development principles, problem-solving,
+                            debugging, and clean code practices. A quick learner with excellent analytical,
+                            communication, and teamwork skills, committed to continuously improving technical expertise
+                            and delivering high-quality software solutions.
+
+
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="skills-section" id="skills">
+
+            <div class="section-title">
+                <span>My Skills</span>
+            </div>
+
+            <div class="skills-wrapper">
+
+                <h2 class="skills-heading">Technical Skills</h2>
+
+                <div class="skills-container">
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <h4>Python</h4>
+                        <div class="progress">
+                            <div class="progress-fill" style="width:80%">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h4>HTML</h4>
+                        <div class="progress">
+                            <div class="progress-fill" style="width:95%">
+                                <span>95%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <h4>CSS</h4>
+                        <div class="progress">
+                            <div class="progress-fill" style="width:85%">
+                                <span> 85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <h4>JavaScript</h4>
+                        <div class="progress">
+                            <div class="progress-fill" style="width:70%">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h4>SQL(MySQL)</h4>
+                        <div class="progress">
+                            <div class="progress-fill" style="width:85%">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-brands fa-php"></i>
+                        </div>
+                        <h4>Php</h4>
+                        <div class="progress">
+                            <div class="progress-fill" style="width:60%">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <h4>Data Structures & Algorithms (DSA)</h4>
+                        <div class="progress">
+                            <div class="progress-fill" style="width:30%">
+                                <span> 50+ </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="skills-wrapper tools-section">
+
+                <h2 class="skills-heading">Frameworks / Tools</h2>
+
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <h4>React</h4>
+                        <div class="progress">
+                            <div class="progress-fill" style="width:75%">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="devicon-flask-original"></i>
+                        </div>
+                        <h4>Flask</h4>
+                        <div class="progress">
+                            <div class="progress-fill" style="width:75%">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <h4>Git/GitHub</h4>
+                        <div class="progress">
+                            <div class="progress-fill" style="width:80%">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h4>MySQL Workbench</h4>
+                        <div class="progress">
+                            <div class="progress-fill" style="width:80%">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                        <!-- <p>80%</p> -->
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-brands fa-wordpress"></i>
+                        </div>
+                        <h4>WordPress </h4>
+                        <div class="progress">
+                            <div class="progress-fill" style="width:70%">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                        <!-- <p>70%</p> -->
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-solid fa-table"></i>
+                        </div>
+                        <h4>Excel</h4>
+                        <div class="progress">
+                            <div class="progress-fill" style="width:70%">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                        <!-- <p>70%</p> -->
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="circle">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h4>VS Code</h4>
+                        <div class="progress">
+                            <div class="progress-fill" style="width:95%">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                        <!-- <p>90%</p> -->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="projects-section" id="projects">
+            <div class="section-title">
+                <span>Tech I Work With</span>
+            </div>
+
+            <div class="projects-wrapper">
+                <div class="projects-container">
+
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <img src="assets/Portfolio_Web.png" alt="Project 1">
+
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+                            <p class="project-desc">
+                                Modern responsive portfolio showcasing About Me, projects, skills, and achievements with interactive UI, animations, and a mobile-friendly design.
+                            </p>
+                            <div class="tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <a href="https://github.com/nagmodepankaj05/Portfolio-Website" target="_blank"
+                                class="project-btn">
+                                <i class="fa-brands fa-github"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <img src="assets/Fly-Route_System.png" alt="Project 2">
+
+                        <div class="project-content">
+                            <h3>FlyRoute Management System</h3>
+                            <p class="project-desc">
+                                Developed Web-based Flight Management System with a Admin Panel for managing flights, routes, bookings, user accounts with user authentication and operational data.
+                            </p>
+                            <div class="tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>MySQL</span>
+                                <span>PHP</span>
+                                <span>Bootstrap</span>
+                            </div>
+
+                            <a href="https://github.com/nagmodepankaj05/FlyRoute-Management-System" target="_blank"
+                                class="project-btn">
+                                <i class="fa-brands fa-github"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card">
+                        <img src="assets/Quiz_Web.png" alt="Project 3">
+
+                        <div class="project-content">
+                            <h3>Online Quiz Management System</h3>
+                            
+                            <p class="project-desc">
+                                Interactive quiz platform with an Admin Control Panel, score tracking, multiple quiz categories, and a responsive interface built using PHP and MySQL.
+                            </p>
+
+                            <div class="tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>MySQL</span>
+                                <span>PHP</span>
+                            </div>
+
+                            <a href="https://github.com/nagmodepankaj05/Quiz-Website" target="_blank"
+                                class="project-btn">
+                                <i class="fa-brands fa-github"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="project-card">
+                        <img src="assets/udemy_web.png" alt="Project 3">
+
+                        <div class="project-content">
+                            <h3>Udemy Clone Website</h3>
+                            <p class="project-desc">
+                                Online learning platform with course management, instructor dashboard, student authentication, Admin control and PostgreSQL-powered backend.
+                            </p>
+                            <div class="tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>PostgreSQL</span>
+                                <span>PHP</span>
+                            </div>
+
+                            <a href="https://github.com/nagmodepankaj05/Udemy-Clone-Website" target="_blank"
+                                class="project-btn">
+                                <i class="fa-brands fa-github"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <section class="contact-section" id="contact">
+
+            <div class="section-title">
+                <span>Contact Me</span>
+            </div>
+
+            <div class="contact-container">
+
+                <div class="contact-info">
+
+                    <h2>Let's Work Together</h2>
+
+                    <p>
+                        I am open to internships, freelance projects,
+                        collaborations, and web development opportunities.
+                        Feel free to contact me anytime.
+                    </p>
+
+                    <div class="contact-details">
+
+
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <a href="mailto:nagmodepankaj2032@gmail.com">
+                                nagmodepankaj2032@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-brands fa-github"></i>
+
+                            <a href="https://github.com/nagmodepankaj05" target="_blank" rel="noopener">
+                                GitHub Profile
+                            </a>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-brands fa-linkedin"></i>
+
+                            <a href="https://linkedin.com/" target="_blank" rel="noopener">
+                                LinkedIn Profile
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/mlgvjkok" method="POST" class="contact-form">
+
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <input type="text" name="name" placeholder="Your Name" required>
+
+                    <input type="email" name="email" placeholder="Your Email" required>
+
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+                    <button type="submit" class="send-btn">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">
+                © 2026 Pankaj Nagmode. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
